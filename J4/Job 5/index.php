@@ -1,6 +1,6 @@
 <?php
     if (isset($_POST)) {
-        if ($_POST["nom"]=="John" && $_POST["prénom"]== "Rambo") {
+        if ($_POST["username"]=="John" && $_POST["password"]== "Rambo") {
             echo "C'est pas ma guerre";
         } else {
             echo "Votre pire cauchemar";
@@ -8,11 +8,11 @@
     }
 ?>
 <form action="index.php" method="post">
-    <label for="nom">Nom : </label>
-    <input type="text" name="nom"><br>
+    <label for="username">Username : </label>
+    <input type="text" name="username"><br>
 
-    <label for="prénom">Prénom : </label>
-    <input type="text" name="prénom">
+    <label for="password">Password : </label>
+    <input type="text" name="password">
 
     <input type="submit" value="Envoyer">
 </form>
