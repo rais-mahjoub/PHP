@@ -1,11 +1,11 @@
 <?php
     $nbe = 0;
-    if (isset($POST)) {
-        foreach ($POST as $key => $value) {
+    if (isset($_POST)) {
+        foreach ($_POST as $key => $value) {
             $nbe++;
         }
+        echo $nbe;
     }
-    echo $nbe;
 ?>
 <form action="index.php" method="post">
     <label for="nom">Nom : </label>
