@@ -17,8 +17,8 @@
 
     <?php
     if (isset($_POST['largeur']) && isset($_POST['hauteur'])) {
-        $largeur = intval($_POST['largeur']);
-        $hauteur = intval($_POST['hauteur']);
+        $largeur = $_POST['largeur'];
+        $hauteur = $_POST['hauteur'];
         
         for ($i = 0; $i < $largeur / 2; $i++) {
             for ($j = $largeur/2-1; $j > $i; $j--) {
