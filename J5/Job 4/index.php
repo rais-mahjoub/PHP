@@ -5,11 +5,26 @@
     <button type="submit"> = </button>
 </form>
 <?php
-function calcule($_GET) {
     $a = $_GET["a"];
     $op = $_GET["op"];
     $b = $_GET["b"];
+
+function calcule($a, $op, $b) {
     if ($op == "+") {
         return $a+$b;
+    } elseif ($op == "-") {
+        return $a-$b;
+    } elseif ($op == "*") {
+        return $a*$b;
+    } elseif ($op == "/") {
+        return $a/$b;
+    } elseif ($op == "%") {
+        return $a%$b;
+    } elseif ($op == "**") {
+        return $a**$b;
+    } else {
+        return "Merci de choisir un opérateur valide (+, -, *, /, %, **)";
     }
 }
+
+echo"$a $op $b = ".calcule($a, $op, $b);
