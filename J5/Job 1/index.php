@@ -1,6 +1,6 @@
 <?php
 function hello() {
-    echo "Bonjour";
+    echo "Hello la Plateforme !";
 }
 
 hello();
