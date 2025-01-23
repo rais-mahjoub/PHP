@@ -1,0 +1,1 @@
+SELECT `Prénom`, `Nom`, `Naissance` FROM `etudiants` WHERE YEAR(`Naissance`) BETWEEN '1998' AND '2018'
