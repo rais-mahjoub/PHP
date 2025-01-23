@@ -1,0 +1,1 @@
+SELECT etage.Nom, salles.Nom AS 'Biggest Room', MAX(salles.Capacité) AS Capacité FROM salles JOIN etage ON salles.id_etage = etage.ID;
