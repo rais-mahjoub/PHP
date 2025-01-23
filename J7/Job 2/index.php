@@ -8,13 +8,9 @@ if(!isset($_COOKIE["nbvisites"])) {
 }
 setcookie("nbvisites",$vis,time()+3600);
 
-
-
 if(isset($_POST["reset"])) {
     setcookie("nbvisites",0);
 }
-
-
 ?>
 
 <form action="index.php" method="post">
