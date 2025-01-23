@@ -1,0 +1,1 @@
+SELECT `Nom`, `Capacité` FROM `salles`;
